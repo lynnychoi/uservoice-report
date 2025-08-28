@@ -6,9 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/uservoice-report' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/uservoice-report' : '',
-  skipTrailingSlashRedirect: true,
+  distDir: 'out',
 };
 
 export default nextConfig;
